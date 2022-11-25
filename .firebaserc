@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ewedd-s22"
+  },
+  "targets": {
+    "ewedd-s22": {
+      "hosting": {
+        "co": [
+          "joshua-park"
+        ]
+      }
+    }
+  }
+}

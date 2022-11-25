@@ -1,0 +1,62 @@
+<div>
+  <ion-row style="align-items: center;margin-top: 10px;">
+    <ion-col size="6">
+      <ion-text style="font-size: 20px;padding-left: 10px;display: block;">Registration</ion-text>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button fill="clear" color="danger" style="float: right;padding-right: 4px;" (click)="pop(null,'cancle')"><ion-icon slot="icon-only" name="close"></ion-icon></ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row id="row2" style="align-items: center;margin:60px 10px;">
+    <ion-col size="4"><ion-text>atribute0</ion-text></ion-col>
+    <ion-col size="8">
+      <ion-select placeholder="Select fruit" (ionChange)="att0($event)" [value]="atribute0">
+        <ion-select-option value="apples">Apples</ion-select-option>
+        <ion-select-option value="oranges">Oranges</ion-select-option>
+        <ion-select-option value="bananas">Bananas</ion-select-option>
+      </ion-select>
+    </ion-col>
+  
+    <ion-col size="4"><ion-text>atribute1</ion-text></ion-col>
+    <ion-col size="8"><ion-input placeholder="type something" [(ngModel)]="atribute1"></ion-input></ion-col>
+  
+    <ion-col size="4"><ion-text>atribute2</ion-text></ion-col>
+    <ion-col size="8"><ion-input placeholder="type something" [(ngModel)]="atribute2"></ion-input></ion-col>
+  
+    <ion-col size="4"><ion-text>atribute3</ion-text></ion-col>
+    <ion-col size="8"><ion-input placeholder="type something" style="width: 80%;display: inline-block;" [(ngModel)]="atribute3"></ion-input> <ion-text style="display: inline-block;">some</ion-text> </ion-col>
+  
+    <ion-col size="4"><ion-text>atribute4</ion-text></ion-col>
+    <ion-col size="8" style="display: flex;flex-direction: row;">
+      <ion-datetime-button mode="ios" style="padding-right: 10px;height: 38px;" datetime="datetime0"></ion-datetime-button> 
+      <ion-datetime-button mode="ios" style="padding-right: 10px;height: 38px;" datetime="datetime1"></ion-datetime-button>
+    </ion-col>
+  
+    <ion-col size="4"><ion-text>atribute5</ion-text></ion-col>
+    <ion-col size="2"><ion-input placeholder="type" [(ngModel)]="atribute5"></ion-input></ion-col>
+  
+    <ion-col size="4"><ion-text>atribute6</ion-text></ion-col>
+    <ion-col size="2"><ion-input placeholder="type" [(ngModel)]="atribute6"></ion-input></ion-col>
+
+    <ion-col size="4"><ion-text>atribute8</ion-text></ion-col>
+  <ion-col size="8"><ion-input placeholder="type something" style="width: 80%;display: inline-block;" [(ngModel)]="atribute7"></ion-input> <ion-text style="display: inline-block;">some</ion-text> </ion-col>
+  </ion-row>
+
+  
+  <ion-button style="width: 180px;float: right;padding-right: 10px;" fill="outline" color="success" (click)="save()">save</ion-button>
+
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template>
+      <ion-datetime id="datetime0" presentation="date" (ionChange)="date0($event)"></ion-datetime>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template>
+      <ion-datetime id="datetime1" presentation="date" (ionChange)="date1($event)"></ion-datetime>
+    </ng-template>
+  </ion-modal>
+ 
+</div>
+

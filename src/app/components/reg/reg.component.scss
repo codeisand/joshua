@@ -1,0 +1,17 @@
+ion-col{
+    padding: 0;
+}
+
+ion-text{
+    margin: 10px;
+    display: block;
+}
+
+#row2 > ion-col{
+    border: 1px solid gray;
+}
+
+#row2 > ion-col:nth-child(odd){
+    background: #D6D6D6;
+    
+}

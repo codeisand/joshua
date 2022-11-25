@@ -1,0 +1,109 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registration List</ion-title>
+    <ion-button slot="end" style="width: 180px;padding-right: 20px;">header Button</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row style="justify-content: center;display: flex;align-items: flex-end;width: 80vw;margin:20px auto;border: 1px solid gray;">
+    <ion-col size="10">
+      <ion-row style="margin: auto; justify-content: center;" id="inRow">
+        <ion-col size="3">
+          <ion-text>something0</ion-text>
+        </ion-col>
+        <ion-col size="3">
+          <ion-select placeholder="Select fruit">
+            <ion-select-option value="apples">Apples</ion-select-option>
+            <ion-select-option value="oranges">Oranges</ion-select-option>
+            <ion-select-option value="bananas">Bananas</ion-select-option>
+          </ion-select>
+        </ion-col>
+        <ion-col size="3">
+          <ion-text>something1</ion-text>
+        </ion-col>
+        <ion-col size="3">
+          <ion-select placeholder="Select fruit">
+            <ion-select-option value="apples">Apples</ion-select-option>
+            <ion-select-option value="oranges">Oranges</ion-select-option>
+            <ion-select-option value="bananas">Bananas</ion-select-option>
+          </ion-select>
+        </ion-col>
+    
+    
+        <ion-col size="3">
+          <ion-text>something0</ion-text>
+        </ion-col>
+        <ion-col size="">
+          <ion-searchbar></ion-searchbar>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="block" fill="outline" color="dark" style="margin:5px 10px ;">button</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <!-- <ion-grid >
+    <ion-row id="row2"  style="margin: 10px auto 0px auto;width: 80vw;background: #D6D6D6;">
+      <ion-col size="0.5" style="display: flex;align-items: center;justify-content: center;"><ion-checkbox (click)="selectAll()"></ion-checkbox></ion-col>
+      <ion-col size="1.4375"><ion-text>atribute0</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>atribute1</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>atribute2</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>atribute3</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>atribute4</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>atribute5</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>atribute6</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>atribute7</ion-text></ion-col>
+    </ion-row>
+
+    <ion-row id="row2" style="margin: 0px auto;width: 80vw;" *ngFor="let item of localData; let i = index">
+      <ion-col size="0.5" style="display: flex;align-items: center;justify-content: center;"><ion-checkbox (ionChange)="setClick($event,i)" ></ion-checkbox></ion-col>
+      <ion-col size="1.4375"><ion-text>{{item.atribute0}}</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>{{item.atribute1}}</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>{{item.atribute2}}</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>{{item.atribute3}}</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>{{item.atribute4.date0.split('T')[0]}} <br> {{item.atribute4.date1.split('T')[0]}}</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>{{item.atribute5}}</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>{{item.atribute6}}</ion-text></ion-col>
+      <ion-col size="1.4375"><ion-text>{{item.atribute7}}</ion-text></ion-col>
+    </ion-row>
+  </ion-grid> -->
+
+  <table id="table">
+    <tr id="row2"  style="margin: 10px auto 0px auto;width: 80vw;background: #D6D6D6;">
+      <th size="0.5" style="text-align: center;"><ion-checkbox (click)="selectAll()"></ion-checkbox></th>
+      <th size="1.4375"><ion-text>atribute0</ion-text></th>
+      <th size="1.4375"><ion-text>atribute1</ion-text></th>
+      <th size="1.4375"><ion-text>atribute2</ion-text></th>
+      <th size="1.4375"><ion-text>atribute3</ion-text></th>
+      <th size="1.4375"><ion-text>atribute4</ion-text></th>
+      <th size="1.4375"><ion-text>atribute5</ion-text></th>
+      <th size="1.4375"><ion-text>atribute6</ion-text></th>
+      <th size="1.4375"><ion-text>atribute7</ion-text></th>
+    </tr>
+
+    <tr id="row2" style="margin: 0px auto;width: 80vw;" *ngFor="let item of localData; let i = index">
+      <td size="0.5" style="text-align: center;"><ion-checkbox (ionChange)="setClick($event,i)" ></ion-checkbox></td>
+      <td size="1.4375"><ion-text>{{item.atribute0}}</ion-text></td>
+      <td size="1.4375"><ion-text>{{item.atribute1}}</ion-text></td>
+      <td size="1.4375"><ion-text>{{item.atribute2}}</ion-text></td>
+      <td size="1.4375"><ion-text>{{item.atribute3}}</ion-text></td>
+      <td size="1.4375"><ion-text>{{item.atribute4.date0.split('T')[0]}} <br> {{item.atribute4.date1.split('T')[0]}}</ion-text></td>
+      <td size="1.4375"><ion-text>{{item.atribute5}}</ion-text></td>
+      <td size="1.4375"><ion-text>{{item.atribute6}}</ion-text></td>
+      <td size="1.4375"><ion-text>{{item.atribute7}}</ion-text></td>
+    </tr>
+  </table>
+    
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button fill="outline" color="tertiary" slot="start" style="width: 180px;padding-left: 20px;" (click)="registerNow()">Register Now</ion-button>
+    <ion-button fill="outline" color="danger" slot="end" style="width: 180px;padding-right: 20px;" (click)="delete()">delete Now</ion-button>
+    <ion-button fill="outline" color="success" slot="end" style="width: 180px;padding-right: 20px;" (click)="export()">Export Excel</ion-button>
+  </ion-toolbar>
+</ion-footer>
